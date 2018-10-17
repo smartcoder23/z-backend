@@ -60,8 +60,10 @@ var app = express();
 //   res.render('error');
 // });
 const server =http.createServer(app);
+server.listen(process.env.PORT || 5000)
 
- server.listen(port, function(){
-  console.log('Listening on port ' + port);
- });
+
+//  server.listen(port, function(){
+//   console.log('Listening on port ' + port);
+//  });
 module.exports = app;
