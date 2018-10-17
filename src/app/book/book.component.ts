@@ -20,7 +20,7 @@ export class BookComponent implements OnInit {
     let httpOptions = {
       headers: new HttpHeaders({ 'Authorization': localStorage.getItem('jwtToken') })
     };
-    this.http.get('api/book', httpOptions).subscribe(data => {
+    this.http.get('https://zomato-all.herokuapp.com/api/book', httpOptions).subscribe(data => {
       this.books = data;
       console.log(this.books);
     }, err => {

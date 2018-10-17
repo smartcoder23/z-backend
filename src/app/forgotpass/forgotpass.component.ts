@@ -16,6 +16,6 @@ export class ForgotpassComponent implements OnInit {
  
 onsubmit(){
  console.log(this.forgetData);
-this.http.post('/api/forgotpass',this.forgetData).subscribe(res=>console.log(res))
+this.http.post('https://zomato-all.herokuapp.com/api/forgotpass',this.forgetData).subscribe(res=>console.log(res))
 }
 }

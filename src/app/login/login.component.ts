@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     //  localStorage.removeItem('jwtToken');
-    this.http.post('api/signin',this.loginData).subscribe(resp => {
+    this.http.post('https://zomato-all.herokuapp.com/api/signin',this.loginData).subscribe(resp => {
       this.data = resp;
       
       localStorage.setItem('jwtToken', this.data.token);

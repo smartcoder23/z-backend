@@ -1,16 +1,16 @@
 var express = require('express');
 var path = require('path');
 var http = require('http');
-
+var cors = require('cors');
 var favicon = require('serve-favicon');
 
 var app = express();
-// app.use(cors());
- const port=3000;
-// var corsOptions = {
-//   origin: '*',
-//   optionsSuccessStatus: 200
-// };
+ app.use(cors());
+//  const port=3000;
+ var corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200
+ };
 //  app.use(function (req, res, next) {
 // //   res.setHeader('Access-Control-Allow-Origin');
 // //   res.setHeader('Access-Control-Allow-Methods', 'POST');
@@ -60,7 +60,7 @@ var app = express();
 //   res.render('error');
 // });
 const server =http.createServer(app);
-server.listen(process.env.PORT || 5000)
+server.listen(process.env.PORT || 50001)
 
 
 //  server.listen(port, function(){

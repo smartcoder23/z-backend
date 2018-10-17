@@ -10,7 +10,7 @@ import { of } from 'rxjs';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  uri = 'http://localhost:3000/api';
+  // uri = 'http://localhost:3000/api';
   signupData = { username:'', password:'' };
   message = '';
 
@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit {
   }
 
   signup() {
-    this.http.post(`api/signup`,this.signupData).subscribe(resp => {
+    this.http.post('https://zomato-all.herokuapp.com/api/signup',this.signupData).subscribe(resp => {
       console.log(resp);
       this.router.navigate(['login']);
     }, err => {

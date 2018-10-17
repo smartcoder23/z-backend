@@ -28,7 +28,7 @@ onsubmit(){
     user1 : this.user
   };
 console.log(userData);
-  this.http.post('api/resetpassword',userData).subscribe(res=>
+  this.http.post('https://zomato-all.herokuapp.com/api/resetpassword',userData).subscribe(res=>
 console.log(res));
 }
 
