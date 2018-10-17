@@ -21,7 +21,7 @@ var app = express();
    res.sendFile(path.join(__dirname,fullPath,'index.html'));
  });
 
-// /const server =http.createServer(app);
+const server =http.createServer(app);
 server.listen(process.env.PORT || 50001)
 
 
