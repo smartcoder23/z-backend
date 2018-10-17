@@ -1,0 +1,8 @@
+<form #f="ngForm" (ngSubmit)="onsubmit( )" novalidate>
+  <!-- <input type="password" name="new password" required > -->
+ <input type="password" name="confirmPassword"    
+ required [(ngModel)]="user.confirmPassword" 
+  #confirmPassword="ngModel">
+  <button>Submit</button>
+  </form>
+  
