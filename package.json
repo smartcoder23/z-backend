@@ -1,14 +1,16 @@
 {
   "name": "angular6login",
   "version": "0.0.0",
-  "main": "app.js",
+  
   "scripts": {
     "ng": "ng",
     "start": "node app.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --prod"
+    
   },
   "engines": {
     "node": "8.11.3"
