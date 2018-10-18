@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit {
   }
 
   signup() {
-    this.http.post('http://localhost:5000/api/signup',this.signupData).subscribe(resp => {
+    this.http.post('https://zomato-all.herokuapp.com/api/signup',this.signupData).subscribe(resp => {
       console.log(resp);
       this.router.navigate(['login']);
     }, err => {
