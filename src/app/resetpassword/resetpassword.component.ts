@@ -46,8 +46,9 @@ export class ResetpasswordComponent implements OnInit {
   signInWithGoogle(): void {
     //  console.log("rahul",this.userdata);
     this.http.post('https://zomato-all.herokuapp.com/api/sociallogin',this.userdata).subscribe(resp => {
-      this.router.navigate(['books'])
-console.log(resp);
+      console.log(resp);  
+    this.router.navigate(['books'])
+
 
   })
     this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
@@ -56,8 +57,9 @@ console.log(resp);
   signInWithFB(): void {
     console.log(this.userdata)
     this.http.post('https://zomato-all.herokuapp.com/api/sociallogin',this.userdata).subscribe(resp => {
-      this.router.navigate(['books'])
-console.log(resp);
+      console.log(resp);
+      
+    this.router.navigate(['books'])
 
   })
     this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
