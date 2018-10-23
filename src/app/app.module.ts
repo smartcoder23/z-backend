@@ -51,6 +51,7 @@ const appRoutes: Routes = [
     path:'forgot',
     component:ForgotpassComponent
   },
+  
   {
     path: 'signup',
     component: SignupComponent,
@@ -75,7 +76,7 @@ export function getAuthServiceConfigs() {
         },
         {
           id: GoogleLoginProvider.PROVIDER_ID,
-          provider: new GoogleLoginProvider("122278366309-b4dcnqfqmusr48n8tm65upi08k1rfmn9.apps.googleusercontent.com")
+          provider: new GoogleLoginProvider("122278366309-iaol20vcj6jd0mcnf0vmhoqveq119g4d.apps.googleusercontent.com")
         },
         {
           id: LinkedinLoginProvider.PROVIDER_ID,
