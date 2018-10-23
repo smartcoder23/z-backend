@@ -20,10 +20,10 @@ import {
   GoogleLoginProvider,
   // FacebookLoginProvider,
   FacebookLoginProvider,
-  LinkedInLoginProvider
+  LinkedinLoginProvider
  
 
-} from "angularx-social-login";
+} from "angular-6-social-login";
 import { ForgotpassComponent } from './forgotpass/forgotpass.component';
 
 
@@ -79,8 +79,8 @@ export function getAuthServiceConfigs() {
           provider: new GoogleLoginProvider("186385824674-073k9pqg2n9ipvaj682llhfh1dfioiao.apps.googleusercontent.com")
         },
         {
-          id: LinkedInLoginProvider.PROVIDER_ID,
-          provider: new  LinkedInLoginProvider("811y8puxuj9s3y")
+          id: LinkedinLoginProvider.PROVIDER_ID,
+          provider: new  LinkedinLoginProvider("811y8puxuj9s3y")
         },      
           
       ],

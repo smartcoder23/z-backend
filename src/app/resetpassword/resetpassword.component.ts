@@ -4,10 +4,10 @@ import {
   AuthService,
   FacebookLoginProvider,
   GoogleLoginProvider,
-LinkedInLoginProvider
+LinkedinLoginProvider
  
-} from 'angularx-social-login';
-import { SocialUser } from 'angular4-social-login';
+} from 'angular-6-social-login';
+import { SocialUser } from 'angular-6-social-login';
 import { Router } from '@angular/router';
 // const httpOptions = {
 //   headers: new HttpHeaders({
@@ -65,13 +65,13 @@ export class ResetpasswordComponent implements OnInit {
     this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
   }
   signInWithLinkedIn(): void {
-    console.log(this.userdata)
+    console.log("reach there",this.userdata)
     this.http.post('https://zomato-all.herokuapp.com/api/sociallogin',this.userdata).subscribe(resp => {
       this.router.navigate(['books'])
 console.log(resp);
 
   })
-    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
+    this.authService.signIn(LinkedinLoginProvider.PROVIDER_ID);
   }
 
   
