@@ -65,6 +65,7 @@ export class ResetpasswordComponent implements OnInit {
     this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
   }
   signInWithLinkedIn(): void {
+    console.log("dsfds");
     console.log("reach there",this.userdata)
     this.http.post('https://zomato-all.herokuapp.com/api/sociallogin',this.userdata).subscribe(resp => {
       this.router.navigate(['books'])

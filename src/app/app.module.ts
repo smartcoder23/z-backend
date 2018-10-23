@@ -18,7 +18,6 @@ import {
   SocialLoginModule,
   AuthServiceConfig,
   GoogleLoginProvider,
-  // FacebookLoginProvider,
   FacebookLoginProvider,
   LinkedinLoginProvider
  
@@ -76,11 +75,11 @@ export function getAuthServiceConfigs() {
         },
         {
           id: GoogleLoginProvider.PROVIDER_ID,
-          provider: new GoogleLoginProvider("186385824674-073k9pqg2n9ipvaj682llhfh1dfioiao.apps.googleusercontent.com")
+          provider: new GoogleLoginProvider("122278366309-b4dcnqfqmusr48n8tm65upi08k1rfmn9.apps.googleusercontent.com")
         },
         {
           id: LinkedinLoginProvider.PROVIDER_ID,
-          provider: new  LinkedinLoginProvider("")
+          provider: new  LinkedinLoginProvider("811y8puxuj9s3y")
         },      
           
       ],
