@@ -12,8 +12,9 @@ import { Params } from '@angular/router';
 export class ResetComponent implements OnInit {
 user={confirmPassword:""}
 user1:any;
+
   constructor(private http:HttpClient,private route: ActivatedRoute) {
-   
+
     }
 
   ngOnInit() {

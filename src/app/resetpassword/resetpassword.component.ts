@@ -4,9 +4,9 @@ import {
   AuthService,
   FacebookLoginProvider,
   GoogleLoginProvider,
-
+LinkedInLoginProvider
  
-} from 'angular4-social-login';
+} from 'angularx-social-login';
 import { SocialUser } from 'angular4-social-login';
 import { Router } from '@angular/router';
 // const httpOptions = {
