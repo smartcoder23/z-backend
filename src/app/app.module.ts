@@ -80,7 +80,7 @@ export function getAuthServiceConfigs() {
         },
         {
           id: LinkedinLoginProvider.PROVIDER_ID,
-          provider: new  LinkedinLoginProvider("811y8puxuj9s3y")
+          provider: new  LinkedinLoginProvider("86wlkgy4tbshej")
         },      
           
       ],
